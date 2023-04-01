@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { margin-top: 20px; font-size: 11px; text-align: center; }
+    .attribution a {  color:hsl(259, 100%, 65%) ; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="container">
+      <div class="input">
+        <div class="day">
+          <label for="day">DAY</label>
+          <input type="number" id="day" placeholder="DD">
+          <p class="error hidden"></p>
+        </div>
+        <div class="month">
+          <label for="month">MONTH</label>
+          <input type="number" id="month" placeholder="MM">
+          <p class="error hidden"></p>
+        </div>
+        <div class="year">
+          <label for="year">YEAR</label>
+          <input type="number" id="year" placeholder="YYYY">
+          <p class="error hidden"></p>
+        </div>
+      </div>
+      <div class="separation">
+        <div class="line"></div>
+        <div class="icon-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+            </g>
+          </svg>    
+        </div>
+      </div>
+      <div class="output">
+        <div class="output-value">
+          <div class="number-year">
+            <span class="number">-</span>
+            <span class="second-hyphen visible">-</span>
+          </div>
+          <span class="singular hidden">year</span>
+          <span class="plural">years</span>
+        </div>
+        <div class="output-value">
+          <div class="number-months">
+            <span class="number">-</span>
+            <span class="second-hyphen visible">-</span>
+          </div>
+          <span class="singular hidden">month</span>
+          <span class="plural">months</span>
+        </div>
+        <div class="output-value">
+          <div class="number-days">
+            <span class="number">-</span>
+            <span class="second-hyphen">-</span>
+          </div>
+          <span class="singular hidden">day</span>
+          <span class="plural">days</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
